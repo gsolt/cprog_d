@@ -94,6 +94,7 @@
 * V2.1.75	2014.10.01. Gergely Zsolt		11-14 1/4, 14-48 1/4,  15-54 1/1		 		*	
 * V2.1.76	2015.04.09. Gergely Zsolt		10-71, 11-55, 71-92, 73-31, 73-51		 		*	
 * V2.1.77	2015.08.18. Gergely Zsolt		42-43 5/5 -> 5/4		 		*	
+* V2.1.78	2016.09.26. Gergely Zsolt		31-66, 87-20		 		*	
 
 
 			
@@ -382,7 +383,7 @@ ST[0].nSiteList[165]=6154; 	ST[0].nLinkList[165]=RADIO5_1;	/* RADIO1_5	60-99				
 ST[0].nSiteList[166]=6156; 	ST[0].nLinkList[166]=RADIO5_5;	/* RADIO5_5	42-30					KOR*/
 ST[0].nSiteList[167]=6157; 	ST[0].nLinkList[167]=RADIO5_5;	/* RADIO5_5	42-42					KOR*/
 ST[0].nSiteList[168]=6158; 	ST[0].nLinkList[168]=RADIO8_4;	/* RADIO8_2	21-71					ESZT*/
-ST[0].nSiteList[169]=6159; 	ST[0].nLinkList[169]=RADIO7_7;	/* RADIO7_7	87-20					BICS*/
+ST[0].nSiteList[169]=6159; 	ST[0].nLinkList[169]=RADIO7_6;	/* RADIO7_7	87-20					BICS*/
 ST[0].nSiteList[170]=6155; 	ST[0].nLinkList[170]=RADIO7_5;	/* RADIO7_5	87-65					BICS*/
 
 ST[0].nSiteList[171]=6160; 	ST[0].nLinkList[171]=RADIO1_4;	/* RADIO1_4	Gyõr, aluljáró			GYOR*/
@@ -396,7 +397,7 @@ ST[0].nSiteList[177]=6167; 	ST[0].nLinkList[177]=RADIO7_5;	/* RADIO7_5	87-42				
 ST[0].nSiteList[178]=6168; 	ST[0].nLinkList[178]=RADIO7_5;	/* RADIO7_5	87-68					BICS*/
 ST[0].nSiteList[179]=6162; 	ST[0].nLinkList[179]=RADIO5_5;	/* RADIO5_5	43-37					KOR*/
 ST[0].nSiteList[180]=6163; 	ST[0].nLinkList[180]=RADIO9_5;	/* RADIO9_5	90-24					SUM*/
-ST[0].nSiteList[181]=6171; 	ST[0].nLinkList[181]=RADIO7_5;	/* RADIO7_5	31-66					BICS*/
+ST[0].nSiteList[181]=6171; 	ST[0].nLinkList[181]=RADIO7_6;	/* RADIO7_5	31-66					BICS*/
 ST[0].nSiteList[182]=6170; 	ST[0].nLinkList[182]=RADIO3_5;	/* RADIO2_5	35-14					VESZ*/
 
 ST[0].nSiteList[183]=6176; 	ST[0].nLinkList[183]=RADIO1_1;	/* RADIO1_1	11-07					GYOR*/
