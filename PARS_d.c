@@ -429,7 +429,7 @@ ST[0].nSiteList[208]=6197; 	ST[0].nLinkList[208]=RADIO3_5;	/* RADIO2_1	37-99				
 
 ST[0].nSiteList[209]=5104; 	ST[0].nLinkList[209]=RADIO1_5;	/* RADIO1_5	Mecsér, szélerõmû		GYOR*/
 ST[0].nSiteList[210]=5105; 	ST[0].nLinkList[210]=RADIO1_5;	/* RADIO1_5	11-23					GYOR*/
-ST[0].nSiteList[211]=5106; 	ST[0].nLinkList[211]=RADIO1_9;	/* RADIO1_9	11-27					GYOR*/
+ST[0].nSiteList[211]=5106; 	ST[0].nLinkList[211]=RADIO1_5;	/* RADIO1_9	11-27					GYOR*/
 ST[0].nSiteList[212]=43; 	ST[0].nLinkList[212]=RADIO1_9;	/* RADIO1_9	12-89					GYOR*/
 ST[0].nSiteList[213]=6203; 	ST[0].nLinkList[213]=RADIO6_2;	/* RADIO2_3	51-34					VESZ*/
 ST[0].nSiteList[214]=6198; 	ST[0].nLinkList[214]=RADIO4_5;	/* RADIO4_5	71-98					PAP*/
