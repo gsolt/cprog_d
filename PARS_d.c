@@ -196,7 +196,7 @@ ST[0].nSiteList[1]	=3226; 	ST[0].nLinkList[1]	=RADIO1_6;	/* RADIO1_6 60-68 NPS 	
 ST[0].nSiteList[2]	=3227; 	ST[0].nLinkList[2]	=RADIO5_1;	/* RADIO1_6 60-70 NPS 				GYOR*/
 ST[0].nSiteList[3]	=3228; 	ST[0].nLinkList[3]	=RADIO1_6;	/* RADIO1_6 61-42 NPS 				GYOR*/
 ST[0].nSiteList[4]	=3229; 	ST[0].nLinkList[4]	=RADIO1_6;	/* RADIO1_6 61-43 NPS 				GYOR*/
-ST[0].nSiteList[5]	=3230; 	ST[0].nLinkList[5]	=RADIO1_6;	/* RADIO1_6 61-70 NPS 				GYOR*/
+ST[0].nSiteList[5]	=3230; 	ST[0].nLinkList[5]	=RADIO3_1;	/* RADIO1_6 61-70 NPS 				GYOR*/
 ST[0].nSiteList[6]	=3231; 	ST[0].nLinkList[6]	=RADIO1_6;	/* RADIO1_6 62-78 NPS 				GYOR*/
 ST[0].nSiteList[7]	=3232; 	ST[0].nLinkList[7]	=RADIO4_1;	/* RADIO4_6 73-31 NPS 				PAP*/
 ST[0].nSiteList[8]	=3133; 	ST[0].nLinkList[8]	=RADIO8_4;	/* RADIO8_2 21-88 NPS 				ESZT*/
