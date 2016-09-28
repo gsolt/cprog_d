@@ -95,6 +95,7 @@
 * V2.1.76	2015.04.09. Gergely Zsolt		10-71, 11-55, 71-92, 73-31, 73-51		 		*	
 * V2.1.77	2015.08.18. Gergely Zsolt		42-43 5/5 -> 5/4		 		*	
 * V2.1.78	2016.09.26. Gergely Zsolt		31-66, 87-20		 		*	
+* V2.1.79	2016.09.28. Gergely Zsolt		58-738 2/5		 		*	
 
 
 			
@@ -215,7 +216,7 @@ ST[0].nSiteList[19]	=6010; 	ST[0].nLinkList[19]	=RADIO5_1;	/* RADIO1_6 Csorna,MO
 ST[0].nSiteList[20]	=6011; 	ST[0].nLinkList[20]	=RADIO2_2;	/* RADIO2_2 50-70 NPS				VESZ*/
 ST[0].nSiteList[21]	=6012; 	ST[0].nLinkList[21]	=RADIO2_2;	/* RADIO2_2 50-79 NPS				VESZ*/
 ST[0].nSiteList[22]	=6013; 	ST[0].nLinkList[22]	=RADIO2_1;	/* RADIO2_1 51-97 NPS				VESZ*/
-ST[0].nSiteList[23]	=6014; 	ST[0].nLinkList[23]	=RADIO2_2;	/* RADIO2_2 58-738 NPS				VESZ*/
+ST[0].nSiteList[23]	=6014; 	ST[0].nLinkList[23]	=RADIO2_5;	/* RADIO2_2 58-738 NPS				VESZ*/
 ST[0].nSiteList[24]	=6015; 	ST[0].nLinkList[24]	=RADIO2_2; 	/* RADIO2_2 51-44 NPS				VESZ*/				
 ST[0].nSiteList[25]	=6016; 	ST[0].nLinkList[25]	=RADIO1_4;	/* RADIO1_4 Gyor, Ipari Park, AHM	GYOR*/
 ST[0].nSiteList[26]	=6017; 	ST[0].nLinkList[26]	=RADIO3_5;	/* RADIO2_1 51-76 NPS				VESZ*/
