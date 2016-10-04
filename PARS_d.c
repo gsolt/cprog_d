@@ -316,7 +316,7 @@ ST[0].nSiteList[106]=6096; 	ST[0].nLinkList[106]=RADIO3_5;	/* RADIO2_8 51-66				
 ST[0].nSiteList[107]=6097; 	ST[0].nLinkList[107]=RADIO6_1;	/* RADIO6_1 51-50					VESZ*/
 ST[0].nSiteList[108]=6098; 	ST[0].nLinkList[108]=RADIO6_1;	/* RADIO6_1 51-37					VESZ*/
 ST[0].nSiteList[109]=6099; 	ST[0].nLinkList[109]=RADIO2_3;	/* RADIO2_2 71-00					VESZ*/
-ST[0].nSiteList[110]=6100; 	ST[0].nLinkList[110]=RADIO2_3;	/* RADIO2_2 71-09					VESZ*/
+ST[0].nSiteList[110]=6100; 	ST[0].nLinkList[110]=RADIO2_8;	/* RADIO2_2 71-09					VESZ*/
 ST[0].nSiteList[111]=6101; 	ST[0].nLinkList[111]=RADIO2_2;	/* RADIO2_2 52-39					VESZ*/
 ST[0].nSiteList[112]=6102; 	ST[0].nLinkList[112]=RADIO4_9;	/* RADIO4_9 72-42					PAP*/
 ST[0].nSiteList[113]=6103; 	ST[0].nLinkList[113]=RADIO2_1;	/* RADIO2_1 54-20					VESZ*/
