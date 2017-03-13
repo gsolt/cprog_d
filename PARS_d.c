@@ -365,7 +365,7 @@ ST[0].nSiteList[147]=6138; 	ST[0].nLinkList[147]=RADIO5_5;	/* RADIO5_5 42-47				
 ST[0].nSiteList[148]=6139; 	ST[0].nLinkList[148]=RADIO9_5;	/* RADIO9_5 90-22					SUM*/
 ST[0].nSiteList[149]=6140; 	ST[0].nLinkList[149]=RADIO8_2;	/* RADIO8_2 21074					ESZT*/
 ST[0].nSiteList[150]=6141; 	ST[0].nLinkList[150]=RADIO8_2;	/* RADIO8_2 21100					ESZT*/
-ST[0].nSiteList[151]=6142; 	ST[0].nLinkList[151]=RADIO7_5;	/* RADIO7_5 87-12					BICS*/
+ST[0].nSiteList[151]=6142; 	ST[0].nLinkList[151]=RADIO7_5;	/* RADIO7_5 (87-12) 87-24			BICS*/
 ST[0].nSiteList[152]=6143; 	ST[0].nLinkList[152]=RADIO7_5;	/* RADIO7_5 87-13					BICS*/
 ST[0].nSiteList[153]=6144; 	ST[0].nLinkList[153]=RADIO2_4;	/* RADIO2_4 50-58					VESZ*/
 ST[0].nSiteList[154]=6145; 	ST[0].nLinkList[154]=RADIO3_5;	/* RADIO2_6 51-80					VESZ*/
@@ -394,7 +394,7 @@ ST[0].nSiteList[173]=6164; 	ST[0].nLinkList[173]=RADIO8_4;	/* RADIO8_2	21-09				
 ST[0].nSiteList[174]=6165; 	ST[0].nLinkList[174]=RADIO8_4;	/* RADIO8_4	21-96					ESZT*/
 ST[0].nSiteList[175]=6169; 	ST[0].nLinkList[175]=RADIO7_5;	/* RADIO7_5	31-64					BICS*/
 ST[0].nSiteList[176]=6166; 	ST[0].nLinkList[176]=RADIO7_5;	/* RADIO7_5	87-16					BICS*/
-ST[0].nSiteList[177]=6167; 	ST[0].nLinkList[177]=RADIO7_5;	/* RADIO7_5	87-42					BICS*/
+ST[0].nSiteList[177]=6167; 	ST[0].nLinkList[177]=RADIO7_5;	/* RADIO7_5	87-42 (87-41)			BICS*/
 ST[0].nSiteList[178]=6168; 	ST[0].nLinkList[178]=RADIO7_5;	/* RADIO7_5	87-68					BICS*/
 ST[0].nSiteList[179]=6162; 	ST[0].nLinkList[179]=RADIO5_5;	/* RADIO5_5	43-37					KOR*/
 ST[0].nSiteList[180]=6163; 	ST[0].nLinkList[180]=RADIO9_5;	/* RADIO9_5	90-24					SUM*/
@@ -432,7 +432,7 @@ ST[0].nSiteList[208]=6197; 	ST[0].nLinkList[208]=RADIO3_5;	/* RADIO2_1	37-99				
 ST[0].nSiteList[209]=5104; 	ST[0].nLinkList[209]=RADIO1_5;	/* RADIO1_5	Mecsér, szélerõmû		GYOR*/
 ST[0].nSiteList[210]=5105; 	ST[0].nLinkList[210]=RADIO1_5;	/* RADIO1_5	11-23					GYOR*/
 ST[0].nSiteList[211]=5106; 	ST[0].nLinkList[211]=RADIO1_5;	/* RADIO1_9	11-27					GYOR*/
-ST[0].nSiteList[212]=43; 	ST[0].nLinkList[212]=RADIO1_9;	/* RADIO1_9	12-89					GYOR*/
+ST[0].nSiteList[212]=43; 	ST[0].nLinkList[212]=LINE11;	/* RADIO1_9	12-89					GYOR*/
 ST[0].nSiteList[213]=6203; 	ST[0].nLinkList[213]=RADIO6_2;	/* RADIO2_3	51-34					VESZ*/
 ST[0].nSiteList[214]=6198; 	ST[0].nLinkList[214]=RADIO4_5;	/* RADIO4_5	71-98					PAP*/
 ST[0].nSiteList[215]=6200; 	ST[0].nLinkList[215]=RADIO8_4;	/* RADIO8_2	20-03					ESZT*/
