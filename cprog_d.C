@@ -780,7 +780,7 @@ nMoscadHours = mdt.hours;
  			{
  				TMOK_DATA(&sMOT[site_inx],rx_buffer);
  			} 
- 			else if (nType == TYP_TMOK2 && nRxBuf[0] == 89 )
+ 			else if (nType == TYP_TMOK && nRxBuf[0] == 89 )
  			{
  				TMOK_DATA2(&sMOT[site_inx],rx_buffer);
  			} 	
@@ -3316,7 +3316,7 @@ if (sTI[nI].nType == TYP_TAL) /* TALUS-os allomas eseten -----------------------
 	
 	} /* end if TYP_TAL */
 	
-if (sTI[nI].nType == TYP_MOT || sTI[nI].nType == TYP_TMOK || sTI[nI].nType == TYP_MOT2 || sTI[nI].nType == TYP_TMOK2) /* MOTOROLA-s allomas eseten --------------------------*/
+if (sTI[nI].nType == TYP_MOT || sTI[nI].nType == TYP_TMOK || sTI[nI].nType == TYP_MOT2 ) /* MOTOROLA-s allomas eseten --------------------------*/
 	{
 		/* Egy bites jelzesek --------------------------------*/
 		for (nJ=0;nJ<sMOT[nI].nIEC_SP_NUM;nJ++)
