@@ -137,7 +137,8 @@
 #define	RADIO9_8		198
 #define	RADIO9_9		199
 
-
+#define	LINE11			81
+#define	LINE12			82
 
 
 typedef	struct
