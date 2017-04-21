@@ -303,7 +303,7 @@ ST[0].nSiteList[97]	=6080; 	ST[0].nLinkList[97]	=RADIO3_1;	/* RADIO3_1 60-23				
 
 ST[0].nSiteList[98]	=6081; 	ST[0].nLinkList[98]	=RADIO5_1;	/* RADIO1_5 68-945					GYOR*/
 
-ST[0].nSiteList[99]	=6092; 	ST[0].nLinkList[99]	=RADIO8_4;	/* RADIO8_4 21-68					ESZT*/
+ST[0].nSiteList[99]	=6092; 	ST[0].nLinkList[99]	=RADIO8_2;	/* RADIO8_4 21-68					ESZT*/
 ST[0].nSiteList[100]=6093; 	ST[0].nLinkList[100]=RADIO7_1;	/* RADIO8_1 21-03					ESZT*/
 ST[0].nSiteList[101]=6094; 	ST[0].nLinkList[101]=RADIO8_3;	/* RADIO8_3 21-69					ESZT*/
 ST[0].nSiteList[102]=6095; 	ST[0].nLinkList[102]=RADIO8_7;	/* RADIO8_7 21-82					ESZT*/
