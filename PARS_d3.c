@@ -392,7 +392,7 @@ sT[0].sCP[0].sCPR[234].nDCStart=831;    sT[0].sCP[0].sCPR[234].nDCNum= 1;    sT[
 sT[0].sCP[0].sCPR[235].nDCStart=834;    sT[0].sCP[0].sCPR[235].nDCNum= 1;    sT[0].sCP[0].sCPR[235].nSCStart=835;    sT[0].sCP[0].sCPR[235].nAckStart =836;	sT[0].sCP[0].sCPR[235].nAckNum=1;   sT[0].sCP[0].sCPR[235].nSPOffsetCS =4234; sT[0].sCP[0].sCPR[235].nSPOffsetLek= 4235; 	
 sT[0].sCP[0].sCPR[236].nDCStart=837;    sT[0].sCP[0].sCPR[236].nDCNum= 4;    sT[0].sCP[0].sCPR[236].nSCStart=841;    sT[0].sCP[0].sCPR[236].nAckStart =0;	sT[0].sCP[0].sCPR[236].nAckNum=0;   sT[0].sCP[0].sCPR[236].nSPOffsetCS =4250; sT[0].sCP[0].sCPR[236].nSPOffsetLek= 4251; 	
 sT[0].sCP[0].sCPR[237].nDCStart=842;    sT[0].sCP[0].sCPR[237].nDCNum= 1;    sT[0].sCP[0].sCPR[237].nSCStart=843;    sT[0].sCP[0].sCPR[237].nAckStart =0;	sT[0].sCP[0].sCPR[237].nAckNum=0;   sT[0].sCP[0].sCPR[237].nSPOffsetCS =4266; sT[0].sCP[0].sCPR[237].nSPOffsetLek= 4267; 	
-sT[0].sCP[0].sCPR[238].nDCStart=845;    sT[0].sCP[0].sCPR[238].nDCNum= 4;    sT[0].sCP[0].sCPR[238].nSCStart=849;    sT[0].sCP[0].sCPR[238].nAckStart =0;	sT[0].sCP[0].sCPR[238].nAckNum=0;   sT[0].sCP[0].sCPR[238].nSPOffsetCS =4282; sT[0].sCP[0].sCPR[238].nSPOffsetLek= 4283; 	
+sT[0].sCP[0].sCPR[238].nDCStart=845;    sT[0].sCP[0].sCPR[238].nDCNum= 4;    sT[0].sCP[0].sCPR[238].nSCStart=849;    sT[0].sCP[0].sCPR[238].nAckStart =0;	sT[0].sCP[0].sCPR[238].nAckNum=0;   sT[0].sCP[0].sCPR[238].nSPOffsetCS =4337; sT[0].sCP[0].sCPR[238].nSPOffsetLek= 4338; 	
 sT[0].sCP[0].sCPR[239].nDCStart=850;    sT[0].sCP[0].sCPR[239].nDCNum= 4;    sT[0].sCP[0].sCPR[239].nSCStart=854;    sT[0].sCP[0].sCPR[239].nAckStart =0;	sT[0].sCP[0].sCPR[239].nAckNum=0;   sT[0].sCP[0].sCPR[239].nSPOffsetCS =4300; sT[0].sCP[0].sCPR[239].nSPOffsetLek= 4301; 	
 
 
@@ -2226,6 +2226,20 @@ sT[0].sTI[238].nType = TYP_MOT;
 	sT[0].sMOT[238].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
 	sT[0].sMOT[238].nIEC_NM				= 807;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[238].nNMNum				= 4;		/* Analóg mérések száma*/
+
+
+
+sT[0].sTI[238].nType = TYP_TAL;
+
+		sT[0].sTAL[238].nIEC_SP       		= 4302;
+		sT[0].sTAL[238].nIEC_OsszevontHiba	= 4334;
+		sT[0].sTAL[238].nIEC_MT_KommHiba	= 4335;
+		sT[0].sTAL[238].nIEC_DP       		= 692;
+		sT[0].sTAL[238].nIEC_DP_FSZ1  		= 696;
+		sT[0].sTAL[238].nIEC_NM				= 807;
+		sT[0].sTAL[238].nNMNum		  		= 4;
+		sT[0].sTAL[238].nKommStatusNum		= 2;
+		
 
 /* Sopron, Várisi út  -----------------------------------------------------------*/	
 sT[0].sTI[239].nType = TYP_MOT;	
