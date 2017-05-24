@@ -2166,9 +2166,15 @@ if (pTAL->nNMNum > 0)
 		{
 			
 			if (nNMStart > 0)
-			{				
-				fnWriteNM( nNMStart+nI,nRxBuf[12+nI]);
-
+			{	
+				if (nNMStart+nI>806 && nNMStart+nI<811) /* Gyõr, Egyetem-tõl 320 A a MAX */
+				{
+					fnWriteNM( nNMStart+nI,nRxBuf[12+nI]);
+				}
+				else 
+				{
+					fnWriteNM( nNMStart+nI,nRxBuf[12+nI]*3200/750);
+				}			
 			}
 		}
 		if (nI>=16)
