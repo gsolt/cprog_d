@@ -2156,7 +2156,15 @@ if (pTAL->nNMNum > 0)
 		
 	for (nI=0; nI<4 && nI<pTAL->nNMNum; nI++)
 	{
-		fnWriteNM( nNMStart+nI,nRxBuf[12+nI]*3200/750);
+				if (nNMStart+nI>806 && nNMStart+nI<811) /* Gyõr, Egyetem-tõl 320 A a MAX */
+				{
+					fnWriteNM( nNMStart+nI,nRxBuf[12+nI]);
+				}
+				else 
+				{
+					fnWriteNM( nNMStart+nI,nRxBuf[12+nI]*3200/750);
+				}			
+
 	} /*end for*/
 	
 	/*Ha van PM500 vagy SEPAM*/
@@ -2167,14 +2175,7 @@ if (pTAL->nNMNum > 0)
 			
 			if (nNMStart > 0)
 			{	
-				if (nNMStart+nI>806 && nNMStart+nI<811) /* Gyõr, Egyetem-tõl 320 A a MAX */
-				{
-					fnWriteNM( nNMStart+nI,nRxBuf[12+nI]);
-				}
-				else 
-				{
-					fnWriteNM( nNMStart+nI,nRxBuf[12+nI]*3200/750);
-				}			
+				fnWriteNM( nNMStart+nI,nRxBuf[12+nI]);
 			}
 		}
 		if (nI>=16)
