@@ -340,7 +340,7 @@ ST[0].nSiteList[127]=6114; 	ST[0].nLinkList[127]=RADIO4_5;	/* RADIO4_5 74-08				
 
 ST[0].nSiteList[128]=6120; 	ST[0].nLinkList[128]=RADIO6_1;	/* RADIO6_1 Balatonfüred, Horvát ház VESZ*/
 ST[0].nSiteList[129]=6121; 	ST[0].nLinkList[129]=RADIO6_1;	/* RADIO6_1 Balatonfüred, Flamingo 	VESZ*/
-ST[0].nSiteList[130]=6122; 	ST[0].nLinkList[130]=RADIO6_1;	/* RADIO6_1 Balatonfüred, Cziegle	VESZ*/
+ST[0].nSiteList[130]=6122; 	ST[0].nLinkList[130]=RADIO6_2;	/* RADIO6_1 Balatonfüred, Cziegle	VESZ*/
 ST[0].nSiteList[131]=6123; 	ST[0].nLinkList[131]=RADIO6_1;	/* RADIO6_1 Balatonfüred, Zakonyi	VESZ*/
 ST[0].nSiteList[132]=6124; 	ST[0].nLinkList[132]=RADIO6_1;	/* RADIO6_1 Balatonfüred, Csokonai	VESZ*/
 
