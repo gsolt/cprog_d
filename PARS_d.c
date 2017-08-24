@@ -244,7 +244,7 @@ ST[0].nSiteList[47]	=6038; 	ST[0].nLinkList[47]	=RADIO7_1;	/* RADIO8_1 Esztergom
 ST[0].nSiteList[48]	=6039; 	ST[0].nLinkList[48]	=RADIO7_1;	/* RADIO8_1 Esztergom, Erzsébet tér	ESZT*/
 ST[0].nSiteList[49]	=6040; 	ST[0].nLinkList[49]	=RADIO1_4;	/* RADIO1_4 Gyõr, Battyhányi tér	GYOR*/
 ST[0].nSiteList[50]	=6041; 	ST[0].nLinkList[50]	=RADIO1_4;	/* RADIO1_4 Gyõr, Petõfi tér		GYOR*/
-ST[0].nSiteList[51]	=6042; 	ST[0].nLinkList[51]	=RADIO1_5;	/* RADIO1_5 10-27 PM6				GYOR*/
+ST[0].nSiteList[51]	=6042; 	ST[0].nLinkList[51]	=RADIO1_4;	/* RADIO1_5 10-27 PM6				GYOR*/
 ST[0].nSiteList[52]	=6043; 	ST[0].nLinkList[52]	=RADIO1_4;	/* RADIO1_4 10-39 PM6				GYOR*/
 ST[0].nSiteList[53]	=6044; 	ST[0].nLinkList[53]	=RADIO1_4;	/* RADIO1_4 10-49 PM6				GYOR*/
 ST[0].nSiteList[54]	=6045; 	ST[0].nLinkList[54]	=RADIO1_1;	/* RADIO1_1 10-66 PM6				GYOR*/
@@ -278,7 +278,7 @@ ST[0].nSiteList[76]	=6089; 	ST[0].nLinkList[76]	=RADIO3_5;	/* RADIO2_1 37-30				
 ST[0].nSiteList[77]	=6090; 	ST[0].nLinkList[77]	=RADIO1_4;	/* RADIO1_4 Gyõr, IGM				GYOR*/
 ST[0].nSiteList[78]	=6091; 	ST[0].nLinkList[78]	=RADIO1_1;	/* RADIO1_1 Gyõr, Büchl				GYOR*/
 
-ST[0].nSiteList[79]	=6063; 	ST[0].nLinkList[79]	=RADIO1_5;	/* RADIO1_5 10-41					GYOR*/
+ST[0].nSiteList[79]	=6063; 	ST[0].nLinkList[79]	=RADIO1_1;	/* RADIO1_5 10-41					GYOR*/
 ST[0].nSiteList[80]	=6064; 	ST[0].nLinkList[80]	=RADIO1_4;	/* RADIO1_4 10-44					GYOR*/
 ST[0].nSiteList[81]	=6065; 	ST[0].nLinkList[81]	=RADIO1_4;	/* RADIO1_4 10-53					GYOR*/
 ST[0].nSiteList[82]	=6066; 	ST[0].nLinkList[82]	=RADIO1_4;	/* RADIO1_4 10-64					GYOR*/
