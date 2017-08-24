@@ -1,4 +1,4 @@
-/**+**************************************************************************
+/*****************************************************************************
 * NAME           :  cprog_d.c                                                *
 * DESCRIPTION    :                                                            	*
 * PROCESS        :  															*
@@ -4196,23 +4196,25 @@ elküldi a szintén paraméterként megadott RTU-knak (szintén indexel megadva)
 - Az RTU-knak szerepelnie kell a site táblában!!!
 - A reteszes TMOK-k száma is paraméter
 - Az élesítve parancs értéke 1, a bénítva parancs értéke 2 
+- A függvényt az rx() függvény végén célszerû meghívni
+- cprog2.c ki lett egészítve 2 db. függvénnyel ( fnReadDPData, fnWriteDPData )
+
 																				*/
 /****************************************************************************/
-fnRetesz()
+void fnRetesz(void)
 {
-#define  			RETESZ_TMOK_NUM		20	
+#define  			RETESZ_TMOK_NUM		25	
 #define  			RETESZ_RTU_NUM		10	
 #define  			TX_LENGTH			2	
 
 
 	
-unsigned int		ReteszesTMOKIndex[RETESZ_TMOK_NUM];
-unsigned int		ReteszesTMOKNum;
-unsigned int		ReteszesRTUIndex[RETESZ_TMOK_NUM][RETESZ_RTU_NUM];
-unsigned int		ReteszesTMOK_RTUNum[RETESZ_TMOK_NUM];
-unsigned int		ReteszAllapotokKezdoCim;
-unsigned int		ReteszParancsokKezdoCim;
-unsigned int		ReteszesTMOKAllapotok[RETESZ_TMOK_NUM];
+unsigned int		ReteszesTMOKIndex[RETESZ_TMOK_NUM];					/* Reteszes TMOK-k indexei a site táblában */
+unsigned int		ReteszesTMOKNum;									/* Reteszes TMOK-k száma az adott front-endben */
+unsigned int		ReteszesRTUIndex[RETESZ_TMOK_NUM][RETESZ_RTU_NUM];	/* A reteszes TMOK-khoz tartozó RTU-k indexei a site táblában */
+unsigned int		ReteszesTMOK_RTUNum[RETESZ_TMOK_NUM];				/* Adott reteszes TMOK-khoz tartozó RTU-k száma */
+unsigned int		ReteszAllapotokKezdoCim;							/* Retesz állapotok kezdõcíme az IEC táblában */
+unsigned int		ReteszParancsokKezdoCim;							/* Retesz élesítés/bénítás parancsok kezdõcíme az IEC táblában */
 
 
 unsigned int		ReteszAllapotok[RETESZ_TMOK_NUM];
@@ -4227,38 +4229,42 @@ int					nDPTblIndx;
 int					nOffset;
 unsigned short		nTxBuf[80];
 
-CB_TABLE_INFO   	table_DP;
-short          		*p_col_DPH;
-short          		*p_col_DPL;
-short				*p_col_DCAct;
+
+short				*p_col_DCAct; 
 
 
-/* Kezdõértékek megadása - minden frontendnél más!!! *********/
+/* Kezdõértékek megadása - minden frontendnél más!!! ******************************************************************/
+																													/**/
+ReteszAllapotokKezdoCim = 725;  /* DP3, 225 */																		/**/
+ReteszParancsokKezdoCim = 875;	/* DC4, 125 */																		/**/
+																													/**/
+ReteszesTMOKNum = 1;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+																													/**/
+/* 0. TMOK: 11-12 RTU: Mecsér szélerõmû -----------------------*/													/**/
+ReteszesTMOKIndex[0] = 88; 				/* TMOK 11-12 */															/**/
+ReteszesRTUIndex[0][0] = 209;			/* Mecsér, szélerõmû*/														/**/
+ReteszesTMOK_RTUNum[0] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+																													/**/
+/**********************************************************************************************************************/
 
-ReteszAllapotokKezdoCim = 725;
-ReteszParancsokKezdoCim = 875;
 
-ReteszesTMOKNum = 1;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/	
-ReteszesTMOKIndex[0] = 88; 				/* TMOK 11-12 */
-ReteszesRTUIndex[0][0] = 209;			/* Mecsér, szélerõmû*/
-ReteszesTMOK_RTUNum[0] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */
-/***********************************************************/
-
-
-/* Retesz bénítás/élesítés parancsok kezelése */	
+/* Retesz bénítás/élesítés parancsok kezelése *************************************************************************/	
    	for (i=0;i<RETESZ_TMOK_NUM;i++)
    	{
-
+		/* Elõállítja az offsetbõl a DC tábla indexét, a tábla elsõ eleméhez képesti offsetet, a parancsoszlop pointerét*/
    		fnDCTblIndx(ReteszParancsokKezdoCim+i, &nDCTblIndx, &nOffset, &p_col_DCAct);
    		
    		/* Ha jött egy élesítés parancs */
    		if (p_col_DCAct[ReteszParancsokKezdoCim+i-nOffset]==1)
    		{
    			
+   			/* Beírja az éles állapotot a megfelelõ helyre*/
    			fnWriteDPData(ReteszAllapotokKezdoCim+i,1, 0, 0, 0, 0);
    			
-        	MOSCAD_sprintf(message,"Retesz állapot, cím %d, érték: %d", ReteszAllapotokKezdoCim+i,p_col_DCAct[ReteszParancsokKezdoCim+i-nOffset]);
+        	MOSCAD_sprintf(message,"Retesz állapot -  cím: %d, érték: %d", ReteszAllapotokKezdoCim+i,p_col_DCAct[ReteszParancsokKezdoCim+i-nOffset]);
         	MOSCAD_error(message );
+        	
+        	/* Visszatörli a parancsot*/
         	p_col_DCAct[ReteszParancsokKezdoCim+i-nOffset]=0;
 
    			
@@ -4268,11 +4274,13 @@ ReteszesTMOK_RTUNum[0] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnáss
    		/* Ha jött egy bénítás parancs */
    		if (p_col_DCAct[ReteszParancsokKezdoCim+i-nOffset]==2)
    		{
-   			
+   			/* Beírja a bénítva állapotot a megfelelõ helyre*/
    			fnWriteDPData(ReteszAllapotokKezdoCim+i,2, 0, 0, 0, 0);
 
         	MOSCAD_sprintf(message,"Retesz állapot, cím %d, érték: %d", ReteszAllapotokKezdoCim+i,p_col_DCAct[ReteszParancsokKezdoCim+i-nOffset]);
         	MOSCAD_error(message );
+        	
+        	/* Visszatörli a parancsot*/
         	p_col_DCAct[ReteszParancsokKezdoCim+i-nOffset]=0;
 
    			
@@ -4281,10 +4289,7 @@ ReteszesTMOK_RTUNum[0] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnáss
 	
 	
 
-
-
-
-/* Elõállítja a reteszes TMOK-k állásjelzés indexeinek és állásjelzéseinek a tömbjét */
+/* Elõállítja a reteszes TMOK-k állásjelzés indexeinek és állásjelzéseinek a tömbjét *************************************************/
 for (i=0;i<ReteszesTMOKNum;i++)
 {
 	if (ReteszesTMOKIndex[i]<250)
@@ -4300,8 +4305,7 @@ for (i=0;i<ReteszesTMOKNum;i++)
 	
 	
 	if (TMOKAllasjelzesOffsetek[i]<1000)
-	{
-				
+	{				
 		TMOKAllasjelzesek[i] = fnReadDPData(TMOKAllasjelzesOffsetek[i], 0, 0, 0, 0);
 	} /* end if */
 	
@@ -4309,19 +4313,15 @@ for (i=0;i<ReteszesTMOKNum;i++)
 
 
 
-/* Elõállítja a retesz állapotok tömbjét */
+/* Elõállítja a retesz állapotok tömbjét ********************************************************************************************/
 for (i=0;i<ReteszesTMOKNum;i++)
 {
-
-		ReteszAllapotok[i] = fnReadDPData(ReteszAllapotokKezdoCim+i, 0, 0, 0, 0);
-
-	
-	
+		ReteszAllapotok[i] = fnReadDPData(ReteszAllapotokKezdoCim+i, 0, 0, 0, 0);	
 } /* end for */
 
 
 
-/* Ha változott az állásjelzés és nincs bénítva a retesz, akkor elküldi a TMOK állásjelzését a kiserõmûnek (RTU-nak) */
+/* Ha változott az állásjelzés és nincs bénítva a retesz, akkor elküldi a TMOK állásjelzését a kiserõmûnek (RTU-nak) *****************/
 for (i=0;i<ReteszesTMOKNum ;i++)
 {
 	if( (TMOKAllasjelzesek[i] != prevTMOKAllasjelzesek[i]) && ( ReteszAllapotok[i] == 1 ) )
@@ -4330,10 +4330,8 @@ for (i=0;i<ReteszesTMOKNum ;i++)
 		for (j=0;j<ReteszesTMOK_RTUNum[i] ;j++)
 		{
 
-   		   	nTxBuf[0] = 1000;
-   		   	nTxBuf[1] = TMOKAllasjelzesek[i];
-    		   	
-    		
+   		   	nTxBuf[0] = 100; /* Ugyanaz, mintha TMOK lenne */				
+   		   	nTxBuf[1] = TMOKAllasjelzesek[i];    		
    		   	
  		   	MOSCAD_sprintf(message,"Állásjelzés küldése, index: %d, Value: %d, i: %d, j: %d",ReteszesRTUIndex[i][j],TMOKAllasjelzesek[i],i,j );
    			MOSCAD_error(message ); 
@@ -4341,30 +4339,20 @@ for (i=0;i<ReteszesTMOKNum ;i++)
    		   	
 			/* Tavirat elkuldese */
 			
-			
 	 		  	if (MOSCAD_TxFrm(ReteszesRTUIndex[i][j], nTxBuf, TX_LENGTH*2) !=0 )
  			  	{
 					MOSCAD_sprintf(message,"Could not send parancs ,index: %d",ReteszesRTUIndex[i][j]);
    				 	MOSCAD_error(message ); 				
-   				}
-     		    
-
-
-			
+   				}     		    			
 		} /* end for*/
 	} /* end if */
 
-
+/* Mindenképpen frissíti az állásjelzések tömbjét 	*/
 prevTMOKAllasjelzesek[i] = TMOKAllasjelzesek[i] ;
 	
 } /* end for */
 
-
-
 	
-	
-	
-	
-} /* end fnRetesz */
+} /* end fnRetesz ********************************************************************************************************************************/
 
 
