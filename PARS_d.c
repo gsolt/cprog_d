@@ -441,7 +441,7 @@ ST[0].nSiteList[217]=5280; 	ST[0].nLinkList[217]=RADIO7_2;	/* RADIO8_5	20-04				
 ST[0].nSiteList[218]=6202; 	ST[0].nLinkList[218]=RADIO3_5;	/* RADIO2_5	37-24					VESZ*/
 ST[0].nSiteList[219]=6204; 	ST[0].nLinkList[219]=RADIO6_3;	/* RADIO2_5	51-99					VESZ*/
 ST[0].nSiteList[220]=6205; 	ST[0].nLinkList[220]=RADIO4_4;	/* RADIO4_6	73-51					PAP*/
-ST[0].nSiteList[221]=6199; 	ST[0].nLinkList[221]=RADIO7_5;	/* RADIO7_5	87-28					BICS*/
+ST[0].nSiteList[221]=6199; 	ST[0].nLinkList[221]=RADIO7_5;	/* RADIO7_5	87-29					BICS*/
 ST[0].nSiteList[222]=6206; 	ST[0].nLinkList[222]=RADIO5_1;	/* RADIO1_6	Csorna, kórház			GYOR*/
 ST[0].nSiteList[223]=6207; 	ST[0].nLinkList[223]=RADIO2_1;	/* RADIO2_1	Veszprém, Landfill		VESZ*/
 ST[0].nSiteList[224]=6208; 	ST[0].nLinkList[224]=RADIO2_1;	/* RADIO2_1	37-05					VESZ*/
