@@ -393,7 +393,7 @@ ST[0].nSiteList[172]=6161; 	ST[0].nLinkList[172]=RADIO1_1;	/* RADIO1_1	Gyõr, dun
 ST[0].nSiteList[173]=6164; 	ST[0].nLinkList[173]=RADIO8_4;	/* RADIO8_2	21-09					ESZT*/
 ST[0].nSiteList[174]=6165; 	ST[0].nLinkList[174]=RADIO8_4;	/* RADIO8_4	21-96					ESZT*/
 ST[0].nSiteList[175]=6169; 	ST[0].nLinkList[175]=RADIO7_5;	/* RADIO7_5	31-64					BICS*/
-ST[0].nSiteList[176]=6166; 	ST[0].nLinkList[176]=RADIO7_5;	/* RADIO7_5	87-16					BICS*/
+ST[0].nSiteList[176]=6166; 	ST[0].nLinkList[176]=RADIO7_7;	/* RADIO7_5	87-16					BICS*/
 ST[0].nSiteList[177]=6167; 	ST[0].nLinkList[177]=RADIO7_5;	/* RADIO7_5	87-42 (87-41)			BICS*/
 ST[0].nSiteList[178]=6168; 	ST[0].nLinkList[178]=RADIO7_5;	/* RADIO7_5	87-68					BICS*/
 ST[0].nSiteList[179]=6162; 	ST[0].nLinkList[179]=RADIO5_5;	/* RADIO5_5	43-37					KOR*/
