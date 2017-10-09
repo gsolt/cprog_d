@@ -460,6 +460,12 @@ ST[0].nSiteList[236]=6213; 	ST[0].nLinkList[236]=RADIO2_1;	/* RADIO2_1 Veszprém,
 ST[0].nSiteList[237]=6214; 	ST[0].nLinkList[237]=RADIO7_5;	/* RADIO7_5 87-67					BICS*/
 ST[0].nSiteList[238]=8069; 	ST[0].nLinkList[238]=RADIO1_4;	/* RADIO1_4 Gyõr, egyetem			GYOR*/
 ST[0].nSiteList[239]=6215; 	ST[0].nLinkList[239]=RADIO3_3;	/* RADIO3_4 Sopron, Várisi út		SOP*/
+ST[0].nSiteList[240]=2000; 	ST[0].nLinkList[240]=RSLINK11;	/* Front end B							*/
+ST[0].nSiteList[241]=8000; 	ST[0].nLinkList[241]=RSLINK11;	/* Front end F							*/
+ST[0].nSiteList[242]=10000;	ST[0].nLinkList[242]=RSLINK11;	/* Front end H							*/
+ST[0].nSiteList[243]=8999; 	ST[0].nLinkList[243]=RSLINK11;	/* B redundancia						*/
+
+
 
 
 
