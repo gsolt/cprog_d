@@ -2255,6 +2255,19 @@ sT[0].sTI[239].nType = TYP_MOT;
 	sT[0].sMOT[239].nIEC_DP_NUM			= 8;   		/* Két bites értékek száma*/
 	sT[0].sMOT[239].nIEC_NM				= 811;		/* Mérések IEC kezdõcíme */
 	sT[0].sMOT[239].nNMNum				= 4;		/* Analóg mérések száma*/
+    
+/* Front end B -----------------------------------------------------------*/
+sT[0].sTI[240].nType = TYP_FRONTEND;
+
+/* Front end F -----------------------------------------------------------*/
+sT[0].sTI[241].nType = TYP_FRONTEND;
+
+/* Front end H -----------------------------------------------------------*/
+sT[0].sTI[242].nType = TYP_FRONTEND;
+
+/* B redundancia -----------------------------------------------------------*/
+sT[0].sTI[243].nType = TYP_FRONTEND;
+    
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
 } /* end fnSetDataPar()*/
 
