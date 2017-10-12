@@ -4333,7 +4333,7 @@ for (i=0;i<ReteszesTMOKNum ;i++)
 		{
 
    		   	nTxBuf[0] = 100; /* Ugyanaz, mintha TMOK lenne */				
-   		   	nTxBuf[1] = TMOKAllasjelzesek[i] << 14; /* Ez a formátum jön a TMOK-ból*/    	
+   		   	nTxBuf[1] = TMOKAllasjelzesek[i]; /*  << 14;  Ez a formátum jön a TMOK-ból*/    	
    		   	nTxBuf[2] = TMOK_ID[i];    	
    		   		
    		   	
@@ -4463,7 +4463,7 @@ if (	nDPStart > 0)
 	for (nI=0; nI < 1 && nI<2; nI++)
 	{	
 		
-				nVal = (nData << nI*2) & 0x8000;
+				nVal = (nData << nI*2) & 0x0002;
  										
  				 				
  				
@@ -4477,7 +4477,7 @@ if (	nDPStart > 0)
 					}
 	
  		
-				nVal = (nData << (nI*2+1)) & 0x8000;
+				nVal = (nData << (nI*2+1)) & 0x0002;
 				
 				if (nVal > 0)
 					{
@@ -4530,7 +4530,7 @@ void fnDP_LEK( unsigned char *rx_buf, int nSite_ID)
 	nDP=fnReadDPData(nOffset, 0, 0, 0, 0);
 	
    	nTxBuf[0] = 100; /* Ugyanaz, mintha TMOK lenne */				
-   	nTxBuf[1] = nDP << 14; /* Ez a formátum jön a TMOK-ból*/ 
+   	nTxBuf[1] = nDP; /*  << 14;  Ez a formátum jön a TMOK-ból*/ 
    	nTxBuf[2] = p_col_RxBuf[1];    	
    	
    				/* Tavirat elkuldese */
