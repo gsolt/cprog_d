@@ -251,7 +251,7 @@ ST[0].nSiteList[54]	=6045; 	ST[0].nLinkList[54]	=RADIO1_1;	/* RADIO1_1 10-66 PM6
 ST[0].nSiteList[55]	=6046; 	ST[0].nLinkList[55]	=RADIO1_4;	/* RADIO1_4 Gyõr, Borsodi mûhely	GYOR*/
 
 ST[0].nSiteList[56]	=6047; 	ST[0].nLinkList[56]	=RADIO1_2;	/* RADIO1_2 10-46					GYOR*/
-ST[0].nSiteList[57]	=6048; 	ST[0].nLinkList[57]	=RADIO1_5;	/* RADIO1_5 10-76					GYOR*/
+ST[0].nSiteList[57]	=6048; 	ST[0].nLinkList[57]	=RADIO1_4;	/* RADIO1_5 10-76					GYOR*/
 ST[0].nSiteList[58]	=6049; 	ST[0].nLinkList[58]	=RADIO1_5;	/* RADIO1_5 10-98					GYOR*/
 ST[0].nSiteList[59]	=6050; 	ST[0].nLinkList[59]	=RADIO1_5;	/* RADIO1_5 10-99					GYOR*/
 ST[0].nSiteList[60]	=6051; 	ST[0].nLinkList[60]	=RADIO1_4;	/* RADIO1_5 11-14					GYOR*/

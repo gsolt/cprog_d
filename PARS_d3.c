@@ -914,12 +914,13 @@ sT[0].sTI[56].nType = TYP_TMOK;
 	sT[0].sMOT[56].nIEC_DP				= 270;		/* Kétbites értékek IEC kezdõcíme*/
 	sT[0].sMOT[56].nIEC_NM				= 203;		/* Mérések IEC kezdõcíme */
   
- /* 10-76 OK2 --------------------------------------------------------------*/	
+ /* 10-76 SECTOS --------------------------------------------------------------*/	
 sT[0].sTI[57].nType = TYP_TMOK;
 
 	sT[0].sMOT[57].nIEC_SP				= 1050;		/* Egybites értékek IEC kezdõcíme*/
 	sT[0].sMOT[57].nIEC_DP				= 271;		/* Kétbites értékek IEC kezdõcíme*/
-	sT[0].sMOT[57].nIEC_NM				= 206;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[57].nIEC_NM				= 851;		/* Mérések IEC kezdõcíme */
+	sT[0].sMOT[57].nNMNum      			= 4;	
   
  /* 10-98 OK2 --------------------------------------------------------------*/	
 sT[0].sTI[58].nType = TYP_TMOK;
