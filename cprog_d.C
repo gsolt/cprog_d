@@ -701,8 +701,8 @@ nMoscadHours = mdt.hours;
 			/* Elvégzi az adatfeldolgozást */
  			nType = sTI[site_inx].nType;
  			
- 				/*MOSCAD_sprintf(message,"Frame received, index: %d, type: %d, rx_buffer[0]: %d,rx_buffer[2]: %d, length: %d",site_inx,nType,nRxBuf[0],nRxBuf[2],buff_len);
-   			 	MOSCAD_error(message ); 				*/
+ 				MOSCAD_sprintf(message,"Frame received, index: %d, type: %d, rx_buffer[0]: %d,rx_buffer[2]: %d, length: %d",site_inx,nType,nRxBuf[0],nRxBuf[2],buff_len);
+   			 	MOSCAD_error(message ); 				
  
 			/*Szinkronizalasi igeny erkezett*/
 			
@@ -799,6 +799,12 @@ nMoscadHours = mdt.hours;
  			else if (nType == TYP_ARKAD && nRxBuf[2] != 2048 && buff_len == 42 * 2 )
  			{
 					ARKAD_DAT(rx_buffer);
+ 			}
+			else if ( (nType == TYP_TAL || nType == TYP_MOT) && nRxBuf[0] == 101 && buff_len == 3 * 2 ) /* A front enden keresztüli reteszkezelés miatt */
+ 			{
+ 				
+				fnDP_LEK( rx_buffer, site_inx);		
+ 		    			    	
  			}
 
  			
