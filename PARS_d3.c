@@ -394,6 +394,10 @@ sT[0].sCP[0].sCPR[236].nDCStart=837;    sT[0].sCP[0].sCPR[236].nDCNum= 4;    sT[
 sT[0].sCP[0].sCPR[237].nDCStart=842;    sT[0].sCP[0].sCPR[237].nDCNum= 1;    sT[0].sCP[0].sCPR[237].nSCStart=843;    sT[0].sCP[0].sCPR[237].nAckStart =0;	sT[0].sCP[0].sCPR[237].nAckNum=0;   sT[0].sCP[0].sCPR[237].nSPOffsetCS =4266; sT[0].sCP[0].sCPR[237].nSPOffsetLek= 4267; 	
 sT[0].sCP[0].sCPR[238].nDCStart=845;    sT[0].sCP[0].sCPR[238].nDCNum= 4;    sT[0].sCP[0].sCPR[238].nSCStart=849;    sT[0].sCP[0].sCPR[238].nAckStart =0;	sT[0].sCP[0].sCPR[238].nAckNum=0;   sT[0].sCP[0].sCPR[238].nSPOffsetCS =4337; sT[0].sCP[0].sCPR[238].nSPOffsetLek= 4338; 	
 sT[0].sCP[0].sCPR[239].nDCStart=850;    sT[0].sCP[0].sCPR[239].nDCNum= 4;    sT[0].sCP[0].sCPR[239].nSCStart=854;    sT[0].sCP[0].sCPR[239].nAckStart =0;	sT[0].sCP[0].sCPR[239].nAckNum=0;   sT[0].sCP[0].sCPR[239].nSPOffsetCS =4300; sT[0].sCP[0].sCPR[239].nSPOffsetLek= 4301; 	
+sT[0].sCP[0].sCPR[240].nDCStart=0;      sT[0].sCP[0].sCPR[240].nDCNum= 0;    sT[0].sCP[0].sCPR[240].nSCStart=0;      sT[0].sCP[0].sCPR[240].nAckStart =0;	sT[0].sCP[0].sCPR[240].nAckNum=0;   sT[0].sCP[0].sCPR[240].nSPOffsetCS =0;    sT[0].sCP[0].sCPR[240].nSPOffsetLek= 0; 	
+sT[0].sCP[0].sCPR[241].nDCStart=0;      sT[0].sCP[0].sCPR[241].nDCNum= 0;    sT[0].sCP[0].sCPR[241].nSCStart=0;      sT[0].sCP[0].sCPR[241].nAckStart =0;	sT[0].sCP[0].sCPR[241].nAckNum=0;   sT[0].sCP[0].sCPR[241].nSPOffsetCS =0;    sT[0].sCP[0].sCPR[241].nSPOffsetLek= 0; 	
+sT[0].sCP[0].sCPR[242].nDCStart=0;      sT[0].sCP[0].sCPR[242].nDCNum= 0;    sT[0].sCP[0].sCPR[242].nSCStart=0;      sT[0].sCP[0].sCPR[242].nAckStart =0;	sT[0].sCP[0].sCPR[242].nAckNum=0;   sT[0].sCP[0].sCPR[242].nSPOffsetCS =0;    sT[0].sCP[0].sCPR[242].nSPOffsetLek= 0; 	
+sT[0].sCP[0].sCPR[243].nDCStart=0;      sT[0].sCP[0].sCPR[243].nDCNum= 0;    sT[0].sCP[0].sCPR[243].nSCStart=0;      sT[0].sCP[0].sCPR[243].nAckStart =0;	sT[0].sCP[0].sCPR[243].nAckNum=0;   sT[0].sCP[0].sCPR[243].nSPOffsetCS =0;    sT[0].sCP[0].sCPR[243].nSPOffsetLek= 0; 	
 
 
 
