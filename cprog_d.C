@@ -4247,7 +4247,7 @@ short				*p_col_DCAct;
 ReteszAllapotokKezdoCim = 725;  /* DP4, 120 */																		/**/
 ReteszParancsokKezdoCim = 875;	/* DC4, 200 */																		/**/
 																													/**/
-ReteszesTMOKNum = 6;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 8;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 
 /**********************************************************************************************************************/																													/**/
 /* 0. TMOK: 11-12 RTU: Front end D -> Mecsér, szélerõmû		 -----------------------*/								/**/
@@ -4292,6 +4292,19 @@ TMOK_ID[5] =1253;						/* TMOK azonosítója a táviratban = DP offset */								/*
 ReteszesRTUIndex[5][0] = 242;			/* Front end H */															/**/
 ReteszesTMOK_RTUNum[5] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 
+/**********************************************************************************************************************/																													/**/
+/* 7. TMOK: 11-34 RTU: Front end H -> Tét, 055-39                 	 -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[6] = 122; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[6] =1254;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[6][0] = 242;			/* Front end H */															/**/
+ReteszesTMOK_RTUNum[6] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+
+/**********************************************************************************************************************/																													/**/
+/* 8. TMOK: 13-30 RTU: Front end H -> Tét, 055-39                 	 -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[7] = 589; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[7] =1255;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[7][0] = 242;			/* Front end H */															/**/
+ReteszesTMOK_RTUNum[7] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 
 /**********************************************************************************************************************/
 
