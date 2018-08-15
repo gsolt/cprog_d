@@ -807,7 +807,11 @@ nMoscadHours = mdt.hours;
  		    			    	
  			}
 
- 			
+ 			else if (nType == TYP_FRONTEND && nRxBuf[0] == 100 )
+ 			{
+ 				FRONTEND_DATA(rx_buffer);
+ 			} 	
+	
  			else
  			{
 				/* MOSCAD_sprintf(message,"Type parameter error: index: %d, type: %d",site_inx,nType);
