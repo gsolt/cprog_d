@@ -4213,7 +4213,7 @@ elküldi a szintén paraméterként megadott RTU-knak (szintén indexel megadva)
 /****************************************************************************/
 void fnRetesz(void)
 {
-#define  			RETESZ_TMOK_NUM		25	
+#define  			RETESZ_TMOK_NUM		50	
 #define  			RETESZ_RTU_NUM		10	
 #define  			TX_LENGTH			3	
 
@@ -4254,7 +4254,7 @@ static int    nReteszOffset[RETESZ_TMOK_NUM];			/* A retesz állapot és parancs o
 ReteszAllapotokKezdoCim = 725;  /* DP4, 120 */																		/**/
 ReteszParancsokKezdoCim = 875;	/* DC4, 200 */																		/**/
 																													/**/
-ReteszesTMOKNum = 15;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
+ReteszesTMOKNum = 16;					/* Ennyi reteszfeltételes TMOK van az adott front-endben*/					/**/	
 
 /**********************************************************************************************************************/																													/**/
 /* 0. TMOK: 11-12 RTU: Front end D -> Mecsér, szélerõmû		 -----------------------*/								/**/
@@ -4397,6 +4397,15 @@ ReteszesRTUIndex[14][0] = 241;			/* Front end F */															/**/
 ReteszesTMOK_RTUNum[14] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[14] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 nReteszOffset[14] = 13;             /* DC parancs és reteszfunkció DP állapot offsete, ha tartozik hozzá DC parancs*/
+
+/**********************************************************************************************************************/
+
+/* 15. TMOK: 60-30 RTU: Front end F -> Lövõ II.               	 -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[15] = 1251; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[15][0] =1251;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[15][0] = 232;			/* Lövõ II. */															/**/
+ReteszesTMOK_RTUNum[15] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[15] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
 
 /**********************************************************************************************************************/
 
