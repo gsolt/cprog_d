@@ -4365,7 +4365,7 @@ nReteszPar[10] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tarto
 
 /* 11. TMOK: 37-24 RTU: Front end H -> Berhida, Peremarton I., Peremarton II:                	 -----------------------*/								/**/
 TMOKAllasjelzesOffsetek[11] = 626; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
-TMOK_ID[11][0] =1272;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+TMOK_ID[11][0] =1287;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
 ReteszesRTUIndex[11][0] = 242;			/* Front end H */															/**/
 ReteszesTMOK_RTUNum[11] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
 nReteszPar[11] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
