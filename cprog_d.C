@@ -4412,6 +4412,14 @@ nReteszPar[15] = 1;                /* 1: tartozik hozzá DC parancs, 0: nem tarto
 nReteszOffset[15] = 15;             /* DC parancs és reteszfunkció DP állapot offsete, ha tartozik hozzá DC parancs*/
 
 /**********************************************************************************************************************/
+/* 16. TMOK: 60-30 RTU: Front end D -> Lövõ szélerõmû                	 -----------------------*/								/**/
+TMOKAllasjelzesOffsetek[16] = 1251; 		/* Az állásjelzés offsete a DP adatbázisban */								/**/
+TMOK_ID[16][0] =1251;						/* TMOK azonosítója a táviratban = DP offset */								/**/															
+ReteszesRTUIndex[16][0] = 232;			/* Lövõ */															/**/
+ReteszesTMOK_RTUNum[16] = 1;				/* Az adott indexû TMOK ennyi kábelköri állomnással kommunikál */			/**/
+nReteszPar[16] = 0;                /* 1: tartozik hozzá DC parancs, 0: nem tartozik hozzá DC parancs */
+
+/**********************************************************************************************************************/
                                        
 
 
