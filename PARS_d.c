@@ -617,7 +617,7 @@ for (nI=0;nI<sCP.nRtuNum && nI<MAX_RTU;nI++)
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* Radios RTU-k indexei, periodikus lekerdezes miatt*/
 /* K1 : GYOR*/
-ST[0].sRAD_K1[0].nRtuNumRad = 92; /*63*/
+ST[0].sRAD_K1[0].nRtuNumRad = 93; /*63*/
 ST[0].sRAD_K1[0].nIndx[0]=0; 
 ST[0].sRAD_K1[0].nIndx[1]=1; 
 ST[0].sRAD_K1[0].nIndx[2]=2; 
@@ -710,6 +710,7 @@ ST[0].sRAD_K1[0].nIndx[88]=212;
 ST[0].sRAD_K1[0].nIndx[89]=222;
 ST[0].sRAD_K1[0].nIndx[90]=228;
 ST[0].sRAD_K1[0].nIndx[91]=238;
+ST[0].sRAD_K1[0].nIndx[92]=229;
 
 
  
@@ -804,7 +805,7 @@ ST[0].sRAD_K2[0].nIndx[75]=236;
 
 
 /* K3 : ESZT, SOP, KOR, BI, GPRS */
-ST[0].sRAD_K3[0].nRtuNumRad = 72; /*55*/
+ST[0].sRAD_K3[0].nRtuNumRad = 74; /*55*/
 ST[0].sRAD_K3[0].nIndx[0]=7; /*8*/
 ST[0].sRAD_K3[0].nIndx[1]=9; 
 ST[0].sRAD_K3[0].nIndx[2]=10; 
@@ -877,6 +878,8 @@ ST[0].sRAD_K3[0].nIndx[68]=232;
 ST[0].sRAD_K3[0].nIndx[69]=233; 
 ST[0].sRAD_K3[0].nIndx[70]=237; 
 ST[0].sRAD_K3[0].nIndx[71]=239; 
+ST[0].sRAD_K3[0].nIndx[72]=8; 
+ST[0].sRAD_K3[0].nIndx[73]=181; 
 
 
 
