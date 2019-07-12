@@ -2193,7 +2193,10 @@ sT[0].sTI[232].nType = TYP_TAL;
 		sT[0].sTAL[232].nIEC_DP_FSZ1  		= 669;
 		sT[0].sTAL[232].nIEC_NM				= 772;
 		sT[0].sTAL[232].nNMNum		  		= 11;
-   		sT[0].sTAL[232].nKommStatusNum		= 2;
+   	sT[0].sTAL[232].nKommStatusNum		= 2;
+   	sT[0].sTAL[232].nSP_EXTRA_OFFSET		= 4341;
+    sT[0].sTAL[232].nSP_EXTRA_NUM		= 2;
+    
 
 /* Bicske szeméttelep   -----------------------------------------------------------------------------------*/
 sT[0].sTI[233].nType = TYP_TAL;	
@@ -2205,7 +2208,10 @@ sT[0].sTI[233].nType = TYP_TAL;
 		sT[0].sTAL[233].nIEC_DP_FSZ1  		= 677;
 		sT[0].sTAL[233].nIEC_NM				= 783;
 		sT[0].sTAL[233].nNMNum		  		= 11;
-   		sT[0].sTAL[233].nKommStatusNum		= 2;
+   	sT[0].sTAL[233].nKommStatusNum		= 2;
+   	sT[0].sTAL[233].nSP_EXTRA_OFFSET		= 4339;
+    sT[0].sTAL[233].nSP_EXTRA_NUM		= 2;
+    
 
  /* 72-56	  --------------------------------------------------------------*/	
 sT[0].sTI[234].nType = TYP_TMOK;
