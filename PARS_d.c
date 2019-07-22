@@ -411,7 +411,7 @@ ST[0].nSiteList[188]=6174; 	ST[0].nLinkList[188]=RADIO1_5;	/* RADIO1_5	10-50				
 ST[0].nSiteList[189]=6175; 	ST[0].nLinkList[189]=RADIO1_1;	/* RADIO1_1	10-93					GYOR*/
 ST[0].nSiteList[190]=6177; 	ST[0].nLinkList[190]=RADIO1_1;	/* RADIO1_1	11-33					GYOR*/
 ST[0].nSiteList[191]=6178; 	ST[0].nLinkList[191]=RADIO4_1;	/* RADIO1_5	11-55					GYOR*/
-ST[0].nSiteList[192]=6179; 	ST[0].nLinkList[192]=RADIO1_5;	/* RADIO1_5	11-89					GYOR*/
+ST[0].nSiteList[192]=6179; 	ST[0].nLinkList[192]=RADIO1_1;	/* RADIO1_5	11-89					GYOR*/
 ST[0].nSiteList[193]=6180; 	ST[0].nLinkList[193]=RADIO1_1;	/* RADIO1_1	11-93					GYOR*/
 ST[0].nSiteList[194]=6181; 	ST[0].nLinkList[194]=RADIO1_5;	/* RADIO1_5	13-04					GYOR*/
 ST[0].nSiteList[195]=6183; 	ST[0].nLinkList[195]=RADIO1_5;	/* RADIO1_5	13-12					GYOR*/
