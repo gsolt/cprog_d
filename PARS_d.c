@@ -246,7 +246,7 @@ ST[0].nSiteList[49]	=6040; 	ST[0].nLinkList[49]	=RADIO1_1;	/* RADIO1_4 Gyõr, Bat
 ST[0].nSiteList[50]	=6041; 	ST[0].nLinkList[50]	=RADIO1_4;	/* RADIO1_4 Gyõr, Petõfi tér		GYOR*/
 ST[0].nSiteList[51]	=6042; 	ST[0].nLinkList[51]	=RADIO1_4;	/* RADIO1_5 10-27 PM6				GYOR*/
 ST[0].nSiteList[52]	=6043; 	ST[0].nLinkList[52]	=RADIO1_4;	/* RADIO1_4 10-39 PM6				GYOR*/
-ST[0].nSiteList[53]	=6044; 	ST[0].nLinkList[53]	=RADIO1_4;	/* RADIO1_4 10-49 PM6				GYOR*/
+ST[0].nSiteList[53]	=6044; 	ST[0].nLinkList[53]	=RADIO1_1;	/* RADIO1_4 10-49 PM6				GYOR*/
 ST[0].nSiteList[54]	=6045; 	ST[0].nLinkList[54]	=RADIO1_1;	/* RADIO1_1 10-66 PM6				GYOR*/
 ST[0].nSiteList[55]	=6046; 	ST[0].nLinkList[55]	=RADIO1_4;	/* RADIO1_4 Gyõr, Borsodi mûhely	GYOR*/
 
@@ -406,7 +406,7 @@ ST[0].nSiteList[184]=6182; 	ST[0].nLinkList[184]=RADIO1_5;	/* RADIO1_5	13-07				
 ST[0].nSiteList[185]=6196; 	ST[0].nLinkList[185]=RADIO1_6;	/* RADIO1_6	Kapuvár, Biogáz			GYOR*/
 
 ST[0].nSiteList[186]=6172; 	ST[0].nLinkList[186]=RADIO1_1;	/* RADIO1_1	10-17					GYOR*/
-ST[0].nSiteList[187]=6173; 	ST[0].nLinkList[187]=RADIO1_1;	/* RADIO1_1	10-18					GYOR*/
+ST[0].nSiteList[187]=6173; 	ST[0].nLinkList[187]=RADIO1_4;	/* RADIO1_1	10-18					GYOR*/
 ST[0].nSiteList[188]=6174; 	ST[0].nLinkList[188]=RADIO1_5;	/* RADIO1_5	10-50					GYOR*/
 ST[0].nSiteList[189]=6175; 	ST[0].nLinkList[189]=RADIO1_1;	/* RADIO1_1	10-93					GYOR*/
 ST[0].nSiteList[190]=6177; 	ST[0].nLinkList[190]=RADIO1_1;	/* RADIO1_1	11-33					GYOR*/
